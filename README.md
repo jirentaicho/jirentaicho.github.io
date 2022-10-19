@@ -1,1 +1,1 @@
-# Nuxt.js Pages
+# Next.js Pages
