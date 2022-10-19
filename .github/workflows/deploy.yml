@@ -16,6 +16,7 @@ jobs:
         with:
           node-version: 16
           cache:  yarn
+
       - name: install
         run:  yarn --frozen-lockfile
 
@@ -26,4 +27,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_toke:  ${{ secrets.BLOG_TOKEN }}
-          publish_dir: out
+          publish_dir: ./out
