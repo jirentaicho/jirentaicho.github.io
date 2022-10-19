@@ -6,7 +6,7 @@ const nextConfig = {
     domains: ['localhost'],
   },
   swcMinify: true,
-  basePath: process.env.GITHUB_ACTIONS,
+  basePath: process.env.GITHUB_ACTIONS && "/",
   trailingSlash: true,
 }
 
