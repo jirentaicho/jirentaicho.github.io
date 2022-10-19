@@ -1,6 +1,6 @@
 # Next.js Pages
 
-(Next.jsで作成したページ)[https://jirentaicho.github.io/]
+[Next.jsで作成したページ](https://jirentaicho.github.io/)
 
 # 参考サイト
 
