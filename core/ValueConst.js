@@ -3,5 +3,5 @@ export const CommonValue = {
     PAGENATION_COUNT : 6,
     range : (start, end, length = end - start + 1) =>
     Array.from({ length }, (_, i) => start + i),
-    categories : ["react","Spring","Java"],
+    categories : ["react","Spring","Java","Rust","Spring"],
 }
