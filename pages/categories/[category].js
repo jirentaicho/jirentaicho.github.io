@@ -2,6 +2,7 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import PostCard from '../../components/PostCard';
 import Sidebar from '../../components/Sidebar';
+import { CommonValue } from '../../core/ValueConst';
 
 export const getStaticProps = ({params}) => {
     const files = fs.readdirSync('posts');
@@ -35,7 +36,7 @@ export const getStaticProps = ({params}) => {
 
 
 export const getStaticPaths = () => {
-    const categories = ['react', 'laravel'];
+    const categories = CommonValue.categories;
     const paths = categories.map( (category) => ({params: { category}}));
     return {
         paths,
