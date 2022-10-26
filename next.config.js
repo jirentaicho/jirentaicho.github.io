@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
   images:{
-    domains: ['localhost'],
+    domains: ['https://volkruss.com'],
   },
   swcMinify: true,
   async redirects() {
@@ -18,7 +18,7 @@ const nextConfig = {
           },
         ],
         destination: '/posts/p492',
-        permanent: true,
+        permanent: false,
       },
       {
         source: '/',has: [{type: 'query',key: 'p',value: '2691'},],
