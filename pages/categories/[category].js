@@ -19,7 +19,8 @@ export const getStaticProps = ({params}) => {
     const category = params.category;
 
     const filteredPosts = posts.filter( (post) => {
-        return post.frontMatter.categories.includes(category);
+        // カテゴリにundefinedが混在しているものが出てる
+        return post.frontMatter.categories?.includes(category);
     });
 
     const sortedPosts = filteredPosts.sort( (postA, postB) => 
